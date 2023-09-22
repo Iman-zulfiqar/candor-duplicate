@@ -2,7 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
-      
+      colors: {
+        candorBlue: rgba(174, 191, 242, 1),
+      },
       boxShadow: {
         lg: "0 7px 14px 3px rgba(0, 0, 0, 0.3)",
         sm: "0px 7px 14px 3px rgba(0, 0, 0, 0.03)",
