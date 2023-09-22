@@ -1,12 +1,13 @@
-import {Logos} from "../../assets";
-import React, {useEffect, useRef, useState} from "react";
-
+import { Logos } from "../../assets";
+import React, { useEffect, useRef, useState } from "react";
+import ContactTable from "../../components/ContactTable/ContactTable";
 
 const ContactsModule = () => {
-    
-    return (
-   <></>
-    );
+  return (
+    <>
+      <ContactTable></ContactTable>
+    </>
+  );
 };
 
 export default ContactsModule;
