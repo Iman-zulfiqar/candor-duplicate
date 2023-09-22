@@ -1,0 +1,71 @@
+/* popscreen container */
+.popup-container{   
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* popscreen container export type span */
+.popup-container span{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22.5px;
+    color: rgba(38, 38, 38, 1);
+}
+
+/* popscreen container info img */
+.popup-container img{
+    width: 15px;
+    height: 14.82px;
+}
+
+/* popscreen container button div */
+.dialog-btn{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* popscreen container cancel button */
+.cncl-btn {
+    width: 206px;
+    height: 60px;
+    color: rgba(174, 191, 242, 1);
+}
+
+.cncl-btn:hover {
+    background-color: white;
+    color:rgba(174, 191, 242, 1);
+}
+
+/* popscreen container export button */
+.exp-btn {
+    width: 206px;
+    height: 60px;
+    color: white;
+    background-color: rgba(174, 191, 242, 1);
+}
+
+/* popscreen */
+.p-dialog{
+    width: 400px;
+    height: 350px;
+    top: 50px;
+}
+
+/* download button  */
+img{
+    width: 100%;
+}
+
+/* popscreen cross close button */
+svg.p-icon.p-dialog-header-close-icon{
+    color: grey;
+    border: 1px solid white;
+}
+
+.p-button {
+    padding: 0;
+    margin: 0;
+}
