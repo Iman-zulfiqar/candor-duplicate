@@ -6,8 +6,8 @@ import "./ContactModule.css"; //custom css for this module
 import { Dropdown } from 'primereact/dropdown';//dropdown from prime react
 import { contactsDownloadInCsv } from "../../hooks/useContact" //api call in hooks file
 import { CSVLink } from "react-csv"; // library to convert json to csv
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify'; //components to toast messages
+import 'react-toastify/dist/ReactToastify.css'; //css for teh toast message
 
 
 const ContactsModule = () => {
