@@ -12,7 +12,7 @@ import {base_url_candor, getToken} from "../utils/constants";
 //     return data.data;
 // }
 export const addContact = async (payload) => {
-    const data = await axios.post(`http://192.168.1.189:8000/candor/contacts/create`,payload,
+    const data = await axios.post(`http://192.168.1.36:8000/candor/contacts/create`,payload,
         {
             headers: {
                 Authorization: `Bearer ${getToken()}`,

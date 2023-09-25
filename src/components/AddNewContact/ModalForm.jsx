@@ -21,7 +21,6 @@ function ModalForm(props) {
         alert(error.message);
       },
     });
-    // hello world
     // axios
     //   .post("http://192.168.1.2:8000/candor/contacts/create", data, {
     //     headers: {
@@ -46,8 +45,9 @@ function ModalForm(props) {
     event.target.value = "";
   };
   return (
-    <div className=" h-[100vh]  relative bg-black/50 ">
-      <div className=" h-max top-1/4 fixed rounded-md bg-white lg:w-1/4 lg:ml-[30vw] mid:w-1/3 mid:ml-[25vw] sm:w-3/5 sm:ml-[15vw] xxxs: w-3/5 xxxs:ml-[20vw] xxxxs:ml-[25vw] ">
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div onClick={props.modalCloseHandler} className="fixed inset-0 bg-black opacity-50"></div>
+        <div className="relative rounded-md bg-white lg:w-1/4  mid:w-1/3 sm:w-3/5  xxxs: w-4/5 ">
         <div className="flex justify-between mt-5 mb-5">
           <div className="pl-5 font-medium">
             <h4>Add new contact</h4>

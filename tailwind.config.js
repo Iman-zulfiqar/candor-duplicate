@@ -8,7 +8,6 @@ module.exports = {
         sm: "0px 7px 14px 3px rgba(0, 0, 0, 0.03)",
       },
       screens: {
-        xxxxs:"250px",
         xxxs: "360px",
         xxs: "480px",
         xs: "550px",
