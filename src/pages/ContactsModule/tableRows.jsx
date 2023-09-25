@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Logos } from "../../assets";
+import React, {useState} from "react";
+import {Logos} from "../../assets";
 
-const tableRows = ({ item }) => {
+const tableRows = ({item}) => {
 
 
     const [dots, setdots] = useState(false);
@@ -9,6 +9,7 @@ const tableRows = ({ item }) => {
         setdots(!dots);
     };
     return (
+
         <tr className="bg-white border-b text-[#262626] cursor-pointer"
             onClick={() => {
                 //   clickHandler();
@@ -19,7 +20,7 @@ const tableRows = ({ item }) => {
                 className="px-6 py-4 inner-size font-medium text-gray-900 whitespace-nowrap dark:text-white"
             >
                 <div className="flex items-center gap-2 pl-3">
-                    <img src={item.userId.picture} alt="" />
+                    <img src={item.userId.picture} alt=""/>
                     <h1 className="text-black">{item.firstName} {item.lastName}</h1>
                 </div>
             </th>
@@ -37,7 +38,7 @@ const tableRows = ({ item }) => {
             </td>
             <td className="px-6 py-4 inner-size whitespace-nowrap">
                 {item.userId?.state} {item.userId?.state != null ? item.userId?.state :
-                    <p className="flex justify-center">---</p>}
+                <p className="flex justify-center">---</p>}
             </td>
             <td className="px-6 py-4 inner-size whitespace-nowrap">
                 {item.userId?.code != null ? item.userId?.code : <p className="flex justify-center">---</p>}

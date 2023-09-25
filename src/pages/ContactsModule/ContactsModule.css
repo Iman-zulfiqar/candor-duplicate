@@ -6,6 +6,7 @@
     height: calc(100vh - 240px);
 }
 
+
 @media (width = 375px) {
     .custom-height-alphabets {
         height: calc(100vh - 320px);

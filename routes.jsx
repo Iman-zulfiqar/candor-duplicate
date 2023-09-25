@@ -69,51 +69,51 @@ export const PublicRoutes = [
     {
         path: "/login",
         name: "Login",
-        element: <Login />,
+        element: <Login/>,
     },
     {
         path: "/forgot-password",
         name: "Forgot Password",
-        element: <ForgotPassword />,
+        element: <ForgotPassword/>,
     },
     {
         path: "/auth",
         name: "auth",
-        element: <AuthComp />,
+        element: <AuthComp/>,
     },
 
     {
         path: "/verify-code",
         name: "Verify Code",
-        element: <VerifyCode />,
+        element: <VerifyCode/>,
     },
 
     {
         path: "/create-new-password",
         name: "Create New Password",
-        element: <CreateNewPassword />,
+        element: <CreateNewPassword/>,
     },
 
     {
         path: "/sign-up",
         name: "Create New Account",
-        element: <CreateAnAccount />,
+        element: <CreateAnAccount/>,
     },
 
     {
         path: "/sign-up-2",
         name: "Create New Account",
-        element: <CreateAccount2 />,
+        element: <CreateAccount2/>,
     },
     {
         path: "/Login-Verification",
         name: "Login Verification",
-        element: <LoginVerification />,
+        element: <LoginVerification/>,
     },
     {
         path: "/OTP-Input",
         name: "OTP Input",
-        element: <OTPInput />,
+        element: <OTPInput/>,
     },
 ];
 
@@ -121,43 +121,43 @@ export const PrivateRoutes = [
     {
         path: "/",
         name: "Conversation",
-        element: <Conversation />,
+        element: <Conversation/>,
     },
     {
         path: "/transcript",
         name: "Transcript",
-        element: <TranscriptComp />,
+        element: <TranscriptComp/>,
     },
     {
         path: "/profile-settings",
         name: "Profile Settings",
-        element: <ProfileSettings />,
+        element: <ProfileSettings/>,
     },
 
     {
         path: "/reply",
         name: "Reply",
-        element: <ReplyComp />,
+        element: <ReplyComp/>,
     },
     {
         path: "/transcript",
         name: "TranscriptComp",
-        element: <TranscriptComp />,
+        element: <TranscriptComp/>,
     },
     {
         path: "/play",
         name: "Play",
-        element: <ReplyVideoPreviewRecording />,
+        element: <ReplyVideoPreviewRecording/>,
     },
     {
         path: "/audio-play",
         name: "Audio Play",
-        element: <ReplyAudioPreviewPlay />,
+        element: <ReplyAudioPreviewPlay/>,
     },
     {
         path: "/approve/:type",
         name: "Approve",
-        element: <ApproveReplyVideoPreview />,
+        element: <ApproveReplyVideoPreview/>,
     },
     // {
     //   path: "/demaon",
@@ -167,27 +167,27 @@ export const PrivateRoutes = [
     {
         path: "/demaon/:type",
         name: "Approve",
-        element: <DemonVideo />,
+        element: <DemonVideo/>,
     },
     {
         path: "/react-video-recorder",
         name: "Approve",
-        element: <ReactVideoRecorder />,
+        element: <ReactVideoRecorder/>,
     },
     {
         path: "/audio-recorder",
         name: "Approve",
-        element: <AudioRecorder />,
+        element: <AudioRecorder/>,
     },
     {
         path: "/conversation-reply-preview",
         name: "ConversationReplyPreview ",
-        element: <ConversationReplyPreview />,
+        element: <ConversationReplyPreview/>,
     },
     {
         path: "/audio-approve",
         name: "Approve Audio",
-        element: <ReplyApproveAudio />,
+        element: <ReplyApproveAudio/>,
     },
 
     // {
@@ -198,219 +198,219 @@ export const PrivateRoutes = [
     {
         path: "/reply-video-preview/:type",
         name: "Reply Video Preview",
-        element: <ReplyVideoPreviewComp />,
+        element: <ReplyVideoPreviewComp/>,
     },
     {
         path: "/reply-audio-preview",
         name: "Reply audio Preview",
-        element: <ReplyAudioPreview />,
+        element: <ReplyAudioPreview/>,
     },
     {
         path: "/reply-text-preview",
         name: "Reply text Preview",
-        element: <ReplyTextPreview />,
+        element: <ReplyTextPreview/>,
     },
 
     {
         path: "/conversation",
         name: "Conversation",
-        element: <Conversation />,
+        element: <Conversation/>,
     },
 
     {
         path: "/video",
         name: "Video",
-        element: <VideoModule />,
+        element: <VideoModule/>,
     },
     {
         path: "/components",
         name: "Components",
-        element: <Components />,
+        element: <Components/>,
     },
     {
         path: "/contact",
         name: "Contact",
-        element: <ContactsModule />,
+        element: <ContactsModule/>,
     },
     {
         path: "/contact2",
         name: "Contact2",
-        element: <ContactsModule2 />,
+        element: <ContactsModule2/>,
     },
     {
         path: "/library",
         name: "Library",
-        element: <LibraryModule />,
+        element: <LibraryModule/>,
     },
     {
         path: "/build-tax-reform",
         name: "BuildTaxReform",
-        element: <BuildTaxReform />,
+        element: <BuildTaxReform/>,
     },
     {
         path: "/donation",
         name: "Donation",
-        element: <Donations />,
+        element: <Donations/>,
     },
     {
         path: "/contact-Info",
         name: "ContactInfo ",
-        element: <ContactInfo />,
+        element: <ContactInfo/>,
     },
     {
         path: "/conversation-reply",
         name: "ConversationReply ",
-        element: <ConversationReply />,
+        element: <ConversationReply/>,
     },
     {
         path: "/conversation-reply-preview",
         name: "ConversationReply ",
-        element: <ConversationReplyPreview />,
+        element: <ConversationReplyPreview/>,
     },
     {
         path: "/share-video/:id",
         name: "ShareVideo",
-        element: <ShareVideo />,
+        element: <ShareVideo/>,
     },
     {
         path: "/integrations",
         name: "Integrations",
-        element: <Integrations />,
+        element: <Integrations/>,
     },
     {
         path: "/share-conversation",
         name: "Share Conversation",
-        element: <ShareConversation />,
+        element: <ShareConversation/>,
     },
     {
         path: "/video-steps",
         name: "Introduction",
-        element: <VideoSteps />,
+        element: <VideoSteps/>,
     },
     {
         path: "/Policies",
         name: "Policies",
-        element: <Policies />,
+        element: <Policies/>,
     },
     {
         path: "/MainEnding",
         name: "MainEnding",
-        element: <MainEnding />,
+        element: <MainEnding/>,
     },
     {
         path: "/AddNewStep/:id",
         name: "AddNewStep",
-        element: <AddNewStep />,
+        element: <AddNewStep/>,
     },
     {
         path: "/AddNewStep",
         name: "AddNewStep",
-        element: <AddNewStep />,
+        element: <AddNewStep/>,
     },
     {
         path: "/AddVideo",
         name: "AddVideo",
-        element: <AddVideo />,
+        element: <AddVideo/>,
     },
     {
         path: "/RecordVideo",
         name: "RecordVideo",
-        element: <RecordVideo />,
+        element: <RecordVideo/>,
     },
     {
         path: "/AddVideoRecording",
         name: "AddVideoRecording",
-        element: <AddVideoRecording />,
+        element: <AddVideoRecording/>,
     },
     {
         path: "/AddVideoApprove",
         name: "AddVideoApprove",
-        element: <AddVideoApprove />,
+        element: <AddVideoApprove/>,
     },
     {
         path: "/AddVideoApproveLibrary",
         name: "AddVideoApproveLibrary",
-        element: <AddVideoApproveLibrary />,
+        element: <AddVideoApproveLibrary/>,
     },
     {
         path: "/AddVideoApprove2",
         name: "AddVideoApprove",
-        element: <AddVideoApprove value="upload" />,
+        element: <AddVideoApprove value="upload"/>,
     },
     {
         path: "/AddVideoApproveUpload",
         name: "AddVideoApproveUpload",
-        element: <AddVideoApproveUpload />,
+        element: <AddVideoApproveUpload/>,
     },
     {
         path: "/AddLibrary",
         name: "AddLibrary",
-        element: <AddLibrary />,
+        element: <AddLibrary/>,
     },
     {
         path: "/form-options",
         name: "FormOptions",
-        element: <FormOptions />,
+        element: <FormOptions/>,
     },
     {
         path: "/Join",
         name: "JoinComp",
-        element: <JoinComp />,
+        element: <JoinComp/>,
     },
     {
         path: "/general-setting",
         name: "GeneralSetting",
-        element: <GeneralSetting />,
+        element: <GeneralSetting/>,
     },
     {
         path: "/email-preview",
         name: "EmailPreview",
-        element: <EmailPreview />,
+        element: <EmailPreview/>,
     },
     {
         path: "/martin-us-senate",
         name: "MartinUsSenate",
-        element: <MartinUsSenate />,
+        element: <MartinUsSenate/>,
     },
 
     {
         path: "/Metrics",
         name: "Metrics",
-        element: <Metrics />,
+        element: <Metrics/>,
     },
     {
         path: "/trim-video",
         name: "TrimVideo",
-        element: <TrimVideo />,
+        element: <TrimVideo/>,
     },
     {
         path: "/add-caption",
         name: "AddCaption",
-        element: <AddCaption />,
+        element: <AddCaption/>,
     },
     {
         path: "/trim-video-library",
         name: "TrimVideoLibrary",
-        element: <TrimVideoLibrary />,
+        element: <TrimVideoLibrary/>,
     },
     {
         path: "/add-caption-library",
         name: "AddCaptionLibrary",
-        element: <AddCaptionLibrary />,
+        element: <AddCaptionLibrary/>,
     },
     {
         path: "/thanks-calender",
         name: "ThanksCalender",
-        element: <ThanksCalender />,
+        element: <ThanksCalender/>,
     },
     {
         path: "/payment-information",
         name: "PaymentInformation",
-        element: <PaymentInformation />,
+        element: <PaymentInformation/>,
     },
     {
         path: "/record-video",
         name: "PaymentInformation",
-        element: <RecordView />,
+        element: <RecordView/>,
     },
 ];
