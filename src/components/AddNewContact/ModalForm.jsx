@@ -47,8 +47,8 @@ function ModalForm(props) {
   return (
         <div className="fixed inset-0 flex items-center justify-center z-50">
         <div onClick={props.modalCloseHandler} className="fixed inset-0 bg-black opacity-50"></div>
-        <div className="relative rounded-md bg-white lg:w-1/4  mid:w-1/3 sm:w-3/5  xxxs: w-4/5 ">
-        <div className="flex justify-between mt-5 mb-5">
+        <div className="relative rounded-md bg-white max-w-xs w-full ml-5 mr-5">
+        <div className="flex justify-between mt-5">
           <div className="pl-5 font-medium">
             <h4>Add new contact</h4>
           </div>
@@ -56,44 +56,50 @@ function ModalForm(props) {
             className="cursor-pointer pr-5"
             onClick={props.modalCloseHandler}
           >
-            <img src="src\assets\Svg\CloseIcon.svg" alt="close option" />
+            <img src="src\assets\Svg\CloseIcon.svg" alt="close option" className="w-4 h-4" />
           </div>
         </div>
-        <hr />
+        <hr className="mt-3" />
 
         <form onSubmit={onFormSubmit} className="mt-5 mb-5">
           <div className="flex justify-between">
-            <div className="pl-5 mr-5">
+            <div className="pl-5 mr-1">
               <label htmlFor="fname" className="text-xs">
                 First Name
               </label>
               <br />
+              <div className="flex bg-[#F5F5F5] h-8 mt-2 rounded-md ">
+              <img src="src\assets\Svg\profile.svg" alt=" user icon " className="w-4 h-4 mt-2 ml-2" />
               <input
                 type="text"
                 id="fname"
                 name="firstName"
                 value={data["firstName"]}
                 required
-                className="w-full pl-3 h-8 mt-2 rounded-md bg-gray-100 placeholder:pl-5 text-xs"
+                className="w-full rounded-md bg-[#F5F5F5] placeholder:pl-1 text-xs"
                 placeholder={` Enter your Name`}
                 onChange={inputHandler}
               />
+              </div>
             </div>
-            <div className="pr-5">
+            <div className="pr-5 ml-1">
               <label htmlFor="lname" className="text-xs">
                 Last Name
               </label>
               <br />
+              <div className="flex bg-[#F5F5F5] h-8 mt-2 rounded-md ">
+              <img src="src\assets\Svg\profile.svg" alt=" user icon " className="w-4 h-4 mt-2 ml-2" />
               <input
                 type="text"
                 id="lname"
                 name="lastName"
                 value={data["lastName"]}
                 required
-                className="w-full pl-3 h-8 mt-2 rounded-md bg-gray-100 placeholder:pl-5 text-xs"
+                className="w-full rounded-md bg-[#F5F5F5] placeholder:pl-1 text-xs"
                 placeholder="Enter your Name"
                 onChange={inputHandler}
               />
+              </div>
             </div>
           </div>
           <div className="pl-5 pr-5 mt-2">
@@ -101,22 +107,25 @@ function ModalForm(props) {
               Email*
             </label>
             <br />
+            <div className="flex bg-[#F5F5F5] mb-5 h-8 mt-2 rounded-md ">
+            <img src="src\assets\Svg\sms1.svg" alt="" className="w-4 h-4 mt-2 ml-2" />
             <input
               type="Email"
               id="email"
               name="email"
               value={data["email"]}
               required
-              className="w-full pl-3 h-8 mt-2 mb-5 rounded-md bg-gray-100 placeholder:pl-5 text-xs"
+              className="w-full pl-1 rounded-md bg-[#F5F5F5] placeholder:pl-1 text-xs"
               placeholder="Enter your email address"
               onChange={inputHandler}
             />
+            </div>
           </div>
           <div className="flex justify-around ml-5 mr-5">
             <div>
               <button
                 type="button"
-                className="border-solid border border-sky-300 sm:w-28 h-10 rounded-md text-sky-300 xs:text-xs xxxs:w-14 xxxs:text-[8px]"
+                className="border-solid border border-[#AEBFF2] w-28  h-10 rounded-md text-[#94A2F2] text-xs "
                 onClick={props.modalCloseHandler}
               >
                 Cancel
@@ -125,7 +134,7 @@ function ModalForm(props) {
             <div>
               <button
                 type="submit"
-                className="sm:w-28 h-10 bg-sky-300 rounded-md text-white xs:text-xs xxxs:w-14 xxxs:text-[8px]"
+                className=" w-28 h-10 bg-[#AEBFF2] rounded-md text-white text-xs"
               >
                 Add Contact
               </button>
