@@ -6,6 +6,8 @@ import "./ContactModule.css"; //custom css for this module
 import { Dropdown } from 'primereact/dropdown';//dropdown from prime react
 import { contactsDownloadInCsv } from "../../hooks/useContact" //api call in hooks file
 import { CSVLink } from "react-csv"; // library to convert json to csv
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ContactsModule = () => {
@@ -32,10 +34,10 @@ const ContactsModule = () => {
 
     const responseCheckFromApi = () => {
         if (contactsDownloadInCsv === Error) {
-            alert("Api error")
+            toast.error("Request to Api failed.")
         }
         else {
-            alert("Data send to Api successfully.")
+            toast.success("Data send to Api successfully.");
         }
     }
 
@@ -68,6 +70,7 @@ const ContactsModule = () => {
 
                 </Dialog>
             </div>
+            <ToastContainer />
         </>
     );
 };
