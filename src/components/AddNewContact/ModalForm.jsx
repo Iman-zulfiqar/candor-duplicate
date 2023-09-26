@@ -39,6 +39,7 @@ function ModalForm(props) {
       lastName: "",
       email: "",
     });
+    props.modalCloseHandler();
   };
   const inputHandler = (event) => {
     setData({ ...data, [event.target.name]: event.target.value });
